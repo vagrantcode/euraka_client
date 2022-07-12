@@ -1,4 +1,4 @@
-package com.cloud.mwclient.Bridges;
+package com.cloud.mwClient.Bridges;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

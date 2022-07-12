@@ -1,0 +1,40 @@
+server:
+  port: 9090
+spring:
+  datasource:
+      url: jdbc:mysql://地址/seaport?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+      username : name
+      password : pwd
+      driver-class-name : com.mysql.cj.jdbc.Driver
+ #   dynamic:
+ #     datasource:
+  #      mysql:
+ #         url : jdbc:mysql://mw-striver.cn:9306/mwdata?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+ #         username : name
+ #         password : pwd
+ #         driver-class-name : com.mysql.cj.jdbc.Driver
+#        sqlserver:
+ #         url : jdbc:sqlserver://192.168.2.41:1433;databaseName=Interface
+ #         username : sa
+ #         password : 123456
+ #         driver-class-name : com.microsoft.sqlserver.jdbc.SQLServerDriver
+ #       oracle2:
+ #         url: jdbc:oracle:thin:@192.168.2.41:1521:orcl
+ #         username: system
+ #         password: 123456
+ #         driver-class-name: oracle.jdbc.driver.OracleDriver
+ #       sqlserver2:
+ #         url: jdbc:sqlserver://192.168.2.41:1433;databaseName=LGLog
+ #         username: sa
+ #         password: 123456
+ #         driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+ #     primary:  mysql
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  application:
+    name: mybatisPlus
+eureka:
+  client:
+    service-url:
+      defaultZone: http://mw-striver.cn:9090/eureka/
